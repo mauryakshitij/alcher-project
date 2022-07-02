@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Comic Neue', cursive;
+    padding-top: 100px;
+
+}
+
+a{
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-weight: 500;
+    padding: 8px 100px 30px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+
+}
+
+.logo {
+    width: 40px;
+}
+.header p {
+    font-size: 30px;
+    margin: 4px 20px;
+    width: fit-content;
+    flex: 1;
+    color: gray;
+}
+
+.top-section{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 0 100px;
+    
+    
+}
+
+.top-section h1{
+    justify-content:start ;
+    flex: 1;
+}
+.top-section p{
+    text-align: end;
+    flex: 1;
+    font-size: 24px;
+    color: gray;
+}
+
+.all-posts{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));  
+    padding: 0 100px;
+    min-width: 250px;
+    justify-items: center;
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 40px;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+    width: fit-content;
+
+}
+
+.post-image {
+    width: 25vw;
+    min-width: 200px;
+}
+
+.post-footer {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.post-footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.post-footer p {
+    padding-left: 15px;
+}

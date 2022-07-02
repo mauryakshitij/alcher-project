@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+
+}
+
+main {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 500;
+    padding: 8px 100px 30px 100px;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color:white;
+
+}
+
+.logo {
+    width: 40px;
+}
+
+.header p {
+    font-size: 30px;
+    margin: 4px 20px;
+    width: fit-content;
+    flex: 1;
+    color: gray;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 100px;
+
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    margin: 20px 0px;
+
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.post-profile {
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+.post-image {
+    width: 500px;
+}
+
+.post-footer {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.post-footer img {
+    width: 25px;
+    height: 25px;
+}
+
+.post-footer p {
+    padding-left: 15px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: fit-content;
+    top:0;
+    bottom:0;
+    right: 100px;
+    margin: auto;
+    width: fit-content;
+    background-color: white;
+    z-index: 10;
+
+}
+
+.my-profile {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 18px;
+    min-width: 350px;
+    max-width: 350px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+.my-profile h1 {
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+}
+
+.my-profile-header {
+    background-image: linear-gradient(to right, rgba(255, 105, 72, 0.7), rgb(255, 105, 72));
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    color: white;
+
+
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.my-profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.my-profile-info img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.my-profile-info p {
+    margin: 0;
+    padding: 0 30px;
+    font-weight: 700
+}
+
+.username {
+    color: gray;
+
+}
+
+.name {
+    color: black;
+
+}
+
+.profile-desc {
+    padding-top: 50px;
+    color: gray;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+
+.quick-links {
+    display: flex;
+    align-items: center;
+    width: 350px;
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.quick-links img {
+    width: 25px;
+    margin-right: 20px;
+
+}
+
+.new-post {
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+}
+
+.new-post img {
+    padding: 20px 20px;
+    margin-right: 0;
+}
+
+a{
+    text-decoration: none;
+}
