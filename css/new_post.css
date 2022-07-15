@@ -8,8 +8,9 @@ body {
 
 main {
     display: flex;
-    width: fit-content;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .header {
@@ -24,6 +25,10 @@ main {
     right: 0;
     background-color: white;
 
+}
+
+.header p{
+    min-width: 300px;
 }
 
 .logo {
@@ -42,26 +47,30 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    position: fixed;
-    height: fit-content;
-    top: 0;
-    bottom: 0;
-    left: 100px;
-    margin: auto;
-    width: 500px;
+    width: fit-content;
+    height: 100%;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 
 
 .new-post-form {
 
-    padding: 20px 40px 60px 40px;
+    padding:40px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
     border-radius: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    width: 420px;
 
 
+}
+
+.new-post-form form {
+    width: fit-content;
+    display: inline-block;
 }
 
 
@@ -71,14 +80,23 @@ main {
 
 .caption-field {
     border: 1px solid gray;
-    border-radius: 4px;
-    width: 420px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 402px;
     height: 80px;
     text-align: start;
     line-height: normal;
-    margin-top: 20px;
+    margin: 20px 0;
     resize: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.location-field{
+    border: none;
+    margin: 10px 0;
+    font-size: medium;
+    outline: none;
+    font-weight: bold;
 }
 
 .share-button {
@@ -96,15 +114,14 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
-    position: absolute;
-    height: fit-content;
-    top: 0;
-    bottom: 0;
-    right: 100px;
-    margin: auto;
+    height: 100%;
     width: fit-content;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    padding: 10px;
 
 }
 

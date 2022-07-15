@@ -2,33 +2,36 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="new_post.css">
+    <link rel="stylesheet" href="../css/new_post.css">
     <title>Alcheringa</title>
 </head>
 
 <body>
 
     <div class="header">
-        <img class="logo" src="images/logo.png">
+        <img class="logo" src="../images/logo.png">
         <p> Alcheringa <span style="color: rgba(255,105,72,255) ;">Connect</span></p>
     </div>
     <main>
         <div class="left-section">
-
-            <h1>Create a new post</h1>
-
-            <div class="new-post-form">
-                <form id="new-post">
-                    <label class="input-title" for="image">Image</label><br>
-                    <input class="image-field" type="file" id="image" name="image"
-                        accept="image/x-png,image/gif,image/jpeg"><br>
-                    <label class="input-title" for="caption">Caption</label><br>
-                    <textarea class="caption-field" id="caption" name="caption" form="new-post"
-                        placeholder="Give an image caption"></textarea>
-            </div>
             <div>
-                <input class="share-button" type="submit" value="Share">
-                </form>
+                <h1>Create a new post</h1>
+
+                <div class="new-post-form">
+                    <form id="new-post">
+                        <label class="input-title" for="image">Image</label><br>
+                        <input class="image-field" type="file" id="image" name="image"
+                            accept="image/x-png,image/gif,image/jpeg"><br>
+                        <label class="input-title" for="caption">Caption</label><br>
+                        <textarea class="caption-field" id="caption" name="caption" form="new-post"
+                            placeholder="Give an image caption"></textarea><br>
+                        <label class="input-title" for="location">Location</label><br>
+                        <input class="location-field" type="text" name="location" readonly>
+                </div>
+                <div>
+                    <input class="share-button" type="submit" value="Share">
+                    </form>
+                </div>
             </div>
         </div>
         <div class="right-section">
@@ -38,7 +41,7 @@
                 </div>
                 <div class="profile-info">
                     <div class="my-profile-info">
-                        <img src="images/nature.jpg">
+                        <img src="../images/nature.jpg">
                         <div>
                             <p class="username">username</p>
                             <p class="name">Person name</p>
@@ -48,14 +51,14 @@
                     <div class="profile-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.
                     </div>
-                    <a href="/my_posts.html">
+                    <a href="my_posts.html">
                         <div class="quick-links">
-                            <img src="images/add.png">
+                            <img src="../images/add.png">
                             <p>My posts</p>
                         </div>
                     </a>
                     <div class="quick-links">
-                        <img src="images/save.png">
+                        <img src="../images/save.png">
                         <p> Saved posts</p>
                     </div>
 
@@ -64,15 +67,18 @@
                 </div>
 
             </div>
-            <a href="/new_post.html">
+            <a href="new_post.html">
                 <div class="new-post quick-links">
-                    <img src="images/add.png">
+                    <img src="../images/add.png">
                     <p>Create a new post</p>
 
                 </div>
             </a>
+        </div>
     </main>
 
 </body>
+
+<script src="../js/new_post.js"></script>
 
 </html>

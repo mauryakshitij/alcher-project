@@ -23,6 +23,10 @@ a{
 
 }
 
+.header p{
+    min-width:300px;
+}
+
 .logo {
     width: 40px;
 }
