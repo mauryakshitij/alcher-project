@@ -8,7 +8,11 @@ const success = (position) => {
     GetCurrentLocation(latitude, longitude);
 };
 
-navigator.geolocation.getCurrentPosition(success);
+const err = ()=>{
+    postLocation.setAttribute("value","Unable to find location");
+}
+
+navigator.geolocation.getCurrentPosition(success,err);
 
 
 async function GetCurrentLocation(latitude, longitude) {
@@ -17,9 +21,10 @@ async function GetCurrentLocation(latitude, longitude) {
     const data= await response.json();
     console.log(data.address);
     const address= await data.address
-    DisplayLocation(await address.city, await address.country, await address.postcode)
+    const city =(await address.city)? await address.city:await address.state_district;
+    DisplayLocation(city , await address.country, await address.postcode)
 }
 
 const DisplayLocation=(city,country,pin)=>{
-    postLocation.setAttribute("value",city+", "+country+", "+pin)
+    postLocation.setAttribute("value",city+", "+country+", "+pin);
 }
